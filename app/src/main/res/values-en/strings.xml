@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Github User Search</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search Username</string>
+    <string name="tab_text_1">Profile</string>
+    <string name="tab_text_2">Following</string>
+    <string name="tab_text_3">Followers</string>
+    <string name="unfilled">UnFilled</string>
+    <string name="something_great">\"Something Great in \"</string>
+    <string name="share_to">Share to</string>
+    <string name="following">Following (</string>
+    <string name="followers">Followers (</string>
+    <string name="click_search_icon_on_corner_to_search_user">Click the Searchbox on right corner\nto Search User</string>
+    <string name="data_not_found_ntry_other_keyword">Data Not Found</string>
+    <string name="share">Share</string>
+    <string name="favourite">Favourite</string>
+    <string name="home">Home</string>
+    <string name="reminder_at_09_00_am">Reminder at 09.00 AM</string>
+    <string name="select_language">Select Language</string>
+    <string name="search_user">Search User</string>
+    <string name="english">English</string>
+    <string name="indonesian">Indonesia</string>
+    <string name="lang_change_message">Restart app for make change</string>
+    <string name="setting">Setting</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_subtitle">Check most popular user on github today</string>
+</resources>

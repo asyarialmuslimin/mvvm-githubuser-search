@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Github User Search</string>
+    <string name="search">Pencarian</string>
+    <string name="search_hint">Cari Username</string>
+    <string name="tab_text_1">Profil</string>
+    <string name="tab_text_2">Diikuti</string>
+    <string name="tab_text_3">Pengikut</string>
+    <string name="unfilled">Tidak Diisi</string>
+    <string name="something_great">\"Ada sesuatu yang bagus di \"</string>
+    <string name="share_to">Bagikan ke</string>
+    <string name="following">Diikuti (</string>
+    <string name="followers">Pengikut (</string>
+    <string name="share">Bagikan</string>
+    <string name="favourite">Favorit</string>
+    <string name="home">Beranda</string>
+    <string name="click_search_icon_on_corner_to_search_user">Tekan pencarian di pojok kanan atas\nuntuk mencari User</string>
+    <string name="data_not_found_ntry_other_keyword">Data Tidak Ditemukan</string>
+    <string name="reminder_at_09_00_am">Ingatkan Saat Pukul 09.00 Pagi</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="search_user">Cari User</string>
+    <string name="english">Bahasa Inggris</string>
+    <string name="indonesian">Bahasa Indonesia</string>
+    <string name="lang_change_message">Restart aplikasi untuk melihat perubahan</string>
+    <string name="setting">Pengaturan</string>
+    <string name="reminder">Pengingat</string>
+    <string name="reminder_subtitle">Lihat user paling populer di github hari ini</string>
+</resources>

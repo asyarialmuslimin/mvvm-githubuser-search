@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailuser.profile.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_person"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:tint="#000" />
+                <TextView
+                    android:id="@+id/profile_bio"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#000"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unfilled"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:src="@drawable/ic_work"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:tint="#000" />
+                <TextView
+                    android:id="@+id/profile_work"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unfilled"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:src="@drawable/ic_location"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:tint="#000" />
+                <TextView
+                    android:id="@+id/profile_location"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unfilled"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:src="@drawable/ic_repo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:tint="#000" />
+                <TextView
+                    android:id="@+id/profile_repo"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unfilled"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

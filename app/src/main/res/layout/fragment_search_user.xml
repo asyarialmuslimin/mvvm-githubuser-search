@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.listuser.SearchUserFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            app:srcCompat="@drawable/ic_github_sign"
+                            app:tint="#FFF" />
+                        <TextView
+                            android:id="@+id/txt_title"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Github User Search"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="21sp"
+                            android:textColor="#FFF"/>
+                        <ImageButton
+                            android:id="@+id/show_search"
+                            android:visibility="visible"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_search"
+                            android:background="@android:color/transparent"/>
+                        <ImageButton
+                            android:id="@+id/hide_search"
+                            android:visibility="gone"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_close"
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_container"
+                        android:visibility="gone"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#FFF"
+                        android:paddingStart="8dp"
+                        android:gravity="center_vertical">
+                        <EditText
+                            android:id="@+id/search_box"
+                            android:imeOptions="actionSearch"
+                            android:singleLine="true"
+                            android:inputType="text"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:hint="@string/search_hint"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_height="wrap_content"/>
+                        <ImageButton
+                            android:id="@+id/btn_search"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_search"
+                            app:tint="@color/colorPrimary"
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:clipToPadding="false"
+                android:paddingHorizontal="8dp"
+                android:id="@+id/rv_users"
+                tools:listitem="@layout/row_user" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notfound_state_illustration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_not_found" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingHorizontal="16dp"
+                android:text="@string/data_not_found_ntry_other_keyword"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/init_state_illustration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.56">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_search_illustration" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingHorizontal="16dp"
+                android:text="@string/click_search_icon_on_corner_to_search_user"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_marginTop="250dp"
+            android:visibility="gone"
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="radial">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/shimer_row"/>
+                <include layout="@layout/shimer_row"/>
+                <include layout="@layout/shimer_row"/>
+                <include layout="@layout/shimer_row"/>
+                <include layout="@layout/shimer_row"/>
+                <include layout="@layout/shimer_row"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
