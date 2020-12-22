@@ -13,7 +13,7 @@ class ApiService {
         val client = OkHttpClient.Builder().apply {
             builder.addInterceptor { chain ->
                 val request: Request =
-                    chain.request().newBuilder().addHeader("Authorization", "token 2335ed7d9f664911b8f19823001ab9fa1fb21cb9").build()
+                    chain.request().newBuilder().addHeader("Authorization", "token <YOUR GITHUB API TOKEN>").build()
                 chain.proceed(request)
             }
         }
